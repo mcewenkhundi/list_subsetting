@@ -1,0 +1,188 @@
+---
+title: "Subsetting lists in R"
+author: "McEwen Khundi"
+date: "08/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Examples of atomic vectors
+
+
+```{r logic_vec}
+logical_vec <- c(T,T,F,T,F,T,T)
+
+#The vector
+logical_vec
+
+#Confirming atomic vectory type
+class(logical_vec)
+```
+
+```{r integer_vec}
+integer_vec <- c(1L,2L,3L,4L)
+
+#The vector
+integer_vec
+
+#Confirming atomic vectory type
+class(integer_vec)
+```
+
+
+```{r double_vec}
+double_vec <- c(1.0,2.0,3.0,4.0)
+
+#The vector
+double_vec
+
+#Confirming atomic vectory type
+class(double_vec)
+```
+
+```{r character_vec}
+character_vec <- c(1.0,2.0,3.0,4.0)
+
+#The vector
+character_vec
+
+#Confirming atomic vectory type
+class(character_vec)
+```
+## Examples of list vector
+
+```{r list_vec}
+list_vec <- list( logical_vec = logical_vec, integer_vec = integer_vec, double_vec = double_vec, character_vec = character_vec )
+
+#The vector
+list_vec
+
+#Confirming list vectory type
+---(list_vec)
+```
+## Choosing all members of a list
+
+Subsetting lists(Choosing all members of a list)
+
+```{r subseting_examp1}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a
+
+a[]
+```
+## Choosing all members of a list
+
+Subsetting lists(Choosing all members of a list)
+
+```{r subseting_examp2}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a
+
+a[]
+```
+
+
+Subsetting lists(Choosing list a that has member yb )
+
+```{r subseting_examp3}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[1]
+
+class(a[1])
+
+a["yb"]
+class(a["yb"])
+```
+Subsetting lists(Choosing vector yb from list a )
+
+```{r subseting_examp4}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[[1]]
+class(a[[1]])
+
+a[["yb"]]
+class(a[["yb"]])
+
+a$yb
+class(a$yb)
+
+a$y
+class(a$y)
+```
+
+Subsetting lists(Choosing vector yb from list a )
+
+```{r subseting_examp5}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[[1]]
+class(a[[1]])
+
+a[["yb"]]
+class(a[["yb"]])
+
+a$yb
+class(a$yb)
+
+a$y
+class(a$y)
+```
+
+
+Subsetting lists(Choosing members c(1,2))
+
+```{r subseting_examp6}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[[1]][1:2]
+class(a[[1]][1:2])
+
+a[["yb"]][1:2]
+class(a[["yb"]][1:2])
+
+a$yb[1:2]
+class(a$yb[1:2])
+
+a$y
+class(a$y[1:2])
+```
+
+## Your turn excercise
+Subsetting lists(Choosing member “patient”)
+
+```{r subseting_excercise}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[[2]]
+
+-----
+
+a[[--]]
+
+----
+
+a--
+
+----
+```
