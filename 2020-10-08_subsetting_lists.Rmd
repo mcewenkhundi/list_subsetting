@@ -44,7 +44,7 @@ class(double_vec)
 ```
 
 ```{r character_vec}
-character_vec <- c(1.0,2.0,3.0,4.0)
+character_vec <- c("a","b","c","d")
 
 #The vector
 character_vec
@@ -60,7 +60,7 @@ list_vec <- list( logical_vec = logical_vec, integer_vec = integer_vec, double_v
 #The vector
 list_vec
 
-#Confirming list vectory type
+#Confirming list vector type. Fill the dashes with the right words
 ---(list_vec)
 ```
 ## Choosing all members of a list
@@ -176,13 +176,33 @@ a = list(yb = c(1,2,3), d = "patient")
 
 a[[2]]
 
+#check class on the dashed line
 -----
 
 a[[--]]
 
+#check class on the dashed line
 ----
 
-a--
+a-d
 
+#check class on the dashed line
 ----
 ```
+
+## Your turn excercise
+Subsetting lists(Choosing the list a with just member d)
+
+```{r subseting_excercise}
+
+# Example list
+a = list(yb = c(1,2,3), d = "patient")
+
+a[--]
+
+class(a[--])
+
+a[-yb-]
+class(a["yb"])
+```
+
