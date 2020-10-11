@@ -202,7 +202,7 @@ a[--]
 
 class(a[--])
 
-a[-yb-]
-class(a["yb"])
+a[-d-]
+class(a["d"])
 ```
 
