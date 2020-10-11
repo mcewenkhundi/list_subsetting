@@ -193,7 +193,7 @@ a-d
 ## Your turn excercise
 Subsetting lists(Choosing the list a with just member d)
 
-```{r subseting_excercise}
+```{r subseting_excercise2}
 
 # Example list
 a = list(yb = c(1,2,3), d = "patient")
